@@ -13,6 +13,7 @@ namespace dotnetBug
             }catch (Exception e){
                 Console.WriteLine("Failed while calling GetActiveUdpListeners()");
                 Console.WriteLine(e);
+                throw e;
             }
 
         }
